@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #895308;
+}
+.Navbar {
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1px;
+}
+.Navbar > ul {
+  display: flex;
+  margin: 3px 20px;
+  padding: 1px 30px;
+  list-style-type: none;
+  background: linear-gradient(180deg, rgb(150, 104, 43) 20%, rgb(255, 192, 1));
+  border-radius: 10px;
+}
+.Navbar > ul > li {
+  margin: 0 20px;
+}
+.Navbar > a {
+  text-decoration: none;
+}
+.Author {
+  color: rgb(91, 206, 244);
+  margin-left: 20px;
+  text-decoration: underline;
+}
+.header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-bottom: 5px;
+  position: relative;
+  border-bottom: 4px solid#ebc185;
+  box-shadow: 0 5px 10px rgb(255, 255, 255);
+  color: black;
+  background-color: #955904ca;
+}
+
+.row-1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+.row-1 h1 {
+  font-size: 1.5rem;
+  color: #f59505;
+}
+.row-1 input {
+  outline: none;
+  border: 0;
+  width: 380px;
+  height: 35px;
+  padding: 0 0.5rem;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.row-1 button {
+  outline: none;
+  border: none;
+  height: 35px;
+  padding: 0 0.5rem;
+  background-color: white;
+  position: absolute;
+  transition: 0.2s;
+}
+.row-1 button:hover {
+  cursor: pointer;
+  background-color: green;
+}
+nav {
+  margin: 10px 0;
+  text-align: center;
+}
+.row-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://assets.mediamodifier.com/mockups/5ddb972f21b8bd65408d86d4/girl-sitting-on-library-floor-and-reading-a-book.jpg);
+  clip-path: circle(70% at right 230px);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-position: cover;
+}
+.row-2 h2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: brown;
+  background: linear-gradient(0.55turn, #eacc62, #ebf8e1, #f69d3c);
+  border-radius: 20px 30px;
+  font-size: 25px;
+}
+.search-img {
+  width: 300px;
+  height: 330px;
+  border: 1px solid palegoldenrod;
+  border-radius: 50% 20% / 10% 40%;
+  margin-left: 22px;
+}
+.container {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 0.5fr));
+  grid-gap: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header {
+    padding-bottom: 5px;
+    border-bottom: 4px solid#ebc185;
+    box-shadow: 0 5px 10px rgb(255, 255, 255);
+    color: black;
+    background-color: #955904ca;
+    display: block;
+    width: 100%;
+  }
+  .row-1 {
+    width: 100%;
+  }
+  .row-1 input {
+    width: 80%;
+  }
+  .row-2 {
+    display: none;
+  }
+  .container {
+    width: 80%;
+    margin-top: 25px;
+    margin-left: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    box-sizing: border-box;
+  }
+  .Navbar {
+    padding: 3px 8px;
+  }
+
+  .Navbar > ul {
+    display: flex;
+    padding: 0;
+    margin: 2px 0;
+    background: none;
+  }
+  .Navbar > ul > li {
+    margin: 0;
+    background: inherit;
+    padding-left: 10px;
+  }
+  .Navbar > a {
+    margin-left: 0;
+  }
+  .Author {
+    margin-left: 0;
+    text-decoration: underline;
+  }
+}

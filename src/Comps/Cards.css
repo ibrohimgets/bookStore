@@ -1,0 +1,44 @@
+.card {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 7%;
+  width: 100%;
+  transition: 0.5s;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  background-color: white;
+}
+img {
+  width: 100%;
+  height: 190px;
+  margin: 4px 0;
+  padding: 2px 5px;
+}
+.card .bottom {
+  display: flex;
+  flex-direction: column;
+}
+.bottom .title {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.bottom .amount {
+  background-color: rgb(87, 62, 0);
+  font-size: 16px;
+  color: white;
+  width: 180px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3BlbiUyMGJvb2t8ZW58MHx8MHx8&w=1000&q=80" />
+        <div className="bottom">
+          <h3 className="title">React JS</h3>
+          <p className="amount">3290</p>
+        </div> */
